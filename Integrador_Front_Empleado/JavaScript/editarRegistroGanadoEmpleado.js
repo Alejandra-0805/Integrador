@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const btnEditar = document.getElementById("btnEditar");
-const iconoUsuario = document.querySelector(".icono-usuario img");
-     iconoUsuario.addEventListener("click", () => {
-        window.location.href = "verUsuario.html";
-    });
+
   const valoresOriginales = {
     nombre: document.getElementById("nombre").value,
     arete: document.getElementById("arete").value,
@@ -41,7 +38,8 @@ const iconoUsuario = document.querySelector(".icono-usuario img");
       alert("⚠️ No se detectaron cambios para guardar.");
       return;
     }
+
     alert("✅ Registro actualizado con éxito.");
-    window.location.href = "visualizarRegistroGanado.html";
+    window.location.href = "visualizarRegistroGanadoEmpleado.html";
   });
 });
